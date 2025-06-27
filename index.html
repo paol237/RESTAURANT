@@ -25,26 +25,26 @@
    <!-- nav bar hero-->
 
    <div class="container-x position-relative p-0">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark      px-4      px-lg-5 py-3 py-lg-1">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-1">
       <a href="#" class="navbar-brand p-0">
         <h1 class="text-warning m-0"><i class="fa fa-utensils me-3"></i></h1>
       </a>
-      <button class="navbar-toggler border-1  ms-auto bg-transparent text-light" type="button"  data-toggle="collapse" data-target="#navbarCollapse">
+      <button class="navbar-toggler border-1  ms-auto bg-transparent text-light" type="submit"  data-bs-toggle="collapse" data-bs-target="#navbarCollapse"  aria-expanded="false" aria-label="Toggle navigation">
         <span class="fa fa-bars"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <div class="navbar-nav ms-auto py-0 pe-4">
-          <a href="#" class="nav-item nav-link active">Home</a>
-          <a href="#" class="nav-item nav-link">About</a>
-          <a href="#" class="nav-item nav-link">Services</a>
-          <a href="#" class="nav-item nav-link">Menu</a>
-          <a href="#" class="nav-item nav-link">Pages</a>
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="#about" class="nav-item nav-link">About</a>
+          <a href="#reservation" class="nav-item nav-link">Services</a>
+          <a href="#menu" class="nav-item nav-link">Menu</a>
+          <a href="index.html" class="nav-item nav-link">Pages</a>
 
-          <a href="#" class="nav-item nav-link">Contact</a>
+          <a href="#contact" class="nav-item nav-link">Contact</a>
         </div>
-        <a href="#" class="btn btn-warning py-2 px-4">Book A Table</a>
+        <a href="#bookatable" class="btn btn-warning py-2 px-4">Book A Table</a>
       </div>
     </nav>
 
@@ -54,7 +54,7 @@
           <div class="col-lg-6 text-center text-lg-start">
             <h1 class="display-3 text-white animated sliderInLeft">Enjoy Our <br> Deliciaus Meal</h1>
             <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit quaerat accusamus laudantium sunt porro facere sed dolorum rerum quo!</p>
-            <a href="" class="btn btn-warning py-sm-2 px-sm-5 slideInLeft">Book A Table</a>
+            <a href="#bookatable" class="btn btn-warning py-sm-2 px-sm-5 slideInLeft">Book A Table</a>
           </div>
           <div class="col-lg-6 text-center text-lg-end overflow-hidden">
             <img src="image/hero.jpeg" alt="" class="img-fluid" width="490px">
@@ -72,7 +72,7 @@
         <div class="col-lg col-sm-6 wow fedeInUp" data-wow-delay="0.15">
           <div class="service-item rounded pt-3">
             <div class="p-4">
-              <i class="fa fa-3x fa-user-tie mb-4"></i>
+              <i class="fa fa-3x fa-user-tie mb-4 text-warning"></i>
               <h5 class="fw-bold">Master Chefs</h5>
               <p class="text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. cette histoir de boostsrap me donne deja trop de travail</p>
             </div>
@@ -114,7 +114,7 @@
 
   <!-- ======about section======  -->
 
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-5" id="about">
     <div class="container">
       <div class="row g-5 align-items-center" >
         <div class="col-lg-6">
@@ -181,7 +181,7 @@
 
   <!-- ======menu  section======  -->
 
-  <div class="container-xxl py-5">
+  <div class="container-xxl py-5" id="menu">
     <div class="container">
       <div class="text-center wow fadeInUp">
         <h5 class="section-title ff-secondary text-center text-dark fw-normal">FOOD MENU</h5>
@@ -221,7 +221,7 @@
           </li>
         </ul>
 
-        <div class="tab-content">
+        <div class="tab-content" id="bookatable">
           <div class="tab-pane fade show p-0 active">
             <div class="row g-4">
               <div class="col-lg-6">
@@ -336,11 +336,11 @@
     </div>
   </div>
   <!-- ======== reservation section  -->
-   <div class="container-xxl py-5 px-0 wow fadeInUp">
+   <div class="container-xxl py-5 px-0 wow fadeInUp" id="reservation">
     <div class="row g-0">
       <div class="col-md-6">
         <div class="video">
-          <button type="button" class="btn-play" data-bs-toggle="mode1" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoMoa1">
+          <button type="button" class="btn-play" data-bs-toggle="mode1" data-src="https://www.youtube.com/watch?v=BTGsg-w4XiU" data-bs-target="#videoMoa1">
             <span></span>
           </button>
         </div>
@@ -410,7 +410,7 @@
         </div>
 
         <div class="modal-body">
-          <div class="ratio ratio-16*9">
+          <div class="ratio ratio-16*9 modal">
             <iframe src="" class="embed-responsive-item" id="video" allowfullscreen="always" allow="autoplay"></iframe>
           </div>
         </div>
@@ -419,7 +419,7 @@
    </div>
 
   <!-- ======team  section======  -->
-   <div class="container-xxl pt-5 pb-3">
+   <div class="container-xxl pt-5 pb-3" id="team">
     <div class="container">
       <div class="text-center wow fadeInup">
         <h5 class="section-title ff-secondary text-center text-warning fw-normal">Team Members</h5>
@@ -538,7 +538,7 @@
           <a href="" class="btn btn-link text-decoration-none text-warning">Teams & Conditions</a>
         </div>
         <div class="col-lg-3 col-md-6">
-          <h4 class="text-warning fw-normal mb-4 ff-secondary section-title">Contect</h4>
+          <h4 class="text-warning fw-normal mb-4 ff-secondary section-title" id="contact">Contact</h4>
           <p class=" "> <i class="fa fa-map-marker-alt"></i> Station tradex, Emana, Cameroon</p>
           <p class=" "><i class="fa fa-phone"></i>+237 650077960</p>
           <p class=" "><i class="fa fa-envelope me-3"></i>djoumbouossiepaolmiguel@gmail.com</p>
@@ -584,6 +584,7 @@
       </div>
     </div>
    </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 <script src="index.js"></script>
 </body>
 </html>

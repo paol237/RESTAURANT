@@ -3,7 +3,9 @@
   --light:#f1f8ff;
   --dark: #0f172b;
 }
-
+.ff-secondary{
+  font-family: 'Pacifico', cursive;
+}
 .fw-medium{
   font-weight: 900!important;
 }
@@ -29,7 +31,7 @@
   transition: .5s all;
 }
 
-.sticky-top.navbar-dark .navbar-nav .nav-link{
+.navbar-dark .navbar-nav .nav-link{
   padding: 20px 0;
 }
 
@@ -38,14 +40,14 @@
   color: var(--warning);
 }
 
-.sticky-top.navbar-dark .navbar-brand img{
+.navbar-dark .navbar-brand img{
   max-height: 45px;
 }
 
  @media (max-width:991.98px){
-  .sticky-top.navbar-dark{
+   .navbar-dark{
     position: relative;
-  }
+  } 
 
   .navbar-dark .navbar-collapse{
     margin-top: 15px;
@@ -53,15 +55,20 @@
   }
 
   .navbar-dark .navbar-nav .nav-link,
-  .sticky-top.navbar-dark .navbar-nav .nav-link{
+  .navbar-dark .navbar-nav .nav-link{
     padding: 10px 0;
     margin-left: 0;
+    text-align: left;
   }
 
+  .navbar-dark .navbar-nav .nav-link:hover{
+    background-color: #0f172b;
+    width: 100%;
   .navbar-dark .navbar-brand img{
-    min-height: 45px;
+    max-height: 45px;
   }
-} 
+ } 
+}
 
  @media (min-width:992px){ 
   .navbar-dark{
@@ -73,14 +80,14 @@
     background: transparent !important;
   }
 
-  .sticky-top.navbar-dark{
+  .navbar-dark{
     position: fixed;
     background: var(--dark) !important;
   }
 } 
 
 .hero-header{
-  background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('about2.avif');
+  background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url('image/about2.avif');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -160,7 +167,7 @@
   position: relative;
   height: 100%;
   min-height: 500px;
-  background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)),url('about2.avif');
+  background: linear-gradient(rgba(15, 23, 43, .1), rgba(15, 23, 43, .1)),url('image/about.avif');
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
